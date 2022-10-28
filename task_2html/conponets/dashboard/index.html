@@ -13,25 +13,19 @@
 <body>
     <div class="containers" id="containers">
         <main-aside></main-aside>
-        <section id="section" class="section d-none">
+        <section class="section d-block" id="section">
             <main-navbar></main-navbar>
-            <div class="sections " id="section__body">
-                <div class="section__body  ">
-                    <main-card></main-card>
-                    <main-card></main-card>
-                    <main-card></main-card>
-                    <main-card></main-card>
-                    <main-card></main-card>
-                </div>
+            <div class="section__body" id="section__body">
+               
             </div>
-            <div class="section__applicants  " id="section__applicants">
+            <div class="section__applicants d-none" id="section__applicants">
                 <main-table></main-table>
             </div>
         </section>
-        <section id="section__test" class="section__test">
+        <section class="section__test d-none" id="section__test">
             <nav class="navbar">
                 <div class="navbar__text">
-                    <h1>Create new test</h1>
+                    <h1>Create new test</h1>       
                 </div>
                 <div class="navbar__button">
                     <button class="navbar__button-preview"><i class="bi bi-eye"></i> Test preview </button>
@@ -54,28 +48,35 @@
                 <div class="section__test__body__form d-none" id="section__test__body__form">
                     <div class="section__test__body__form__header">
                         <div class="section__test__body__form__header-title">
-                            <h2>Bitta  variant tanlanuvchi savol</h2>
+                            <h2>Bitta variant tanlanuvchi savol</h2>
                         </div>
                         <div class="section__test__body__form__header__buttons">
-                            <button class="section__test__body__form__header__buttons-create"> + Yana qo‘shish</button>
-                            <button class="section__test__body__form__header__buttons-delete"><i
+                            <button onclick="addTest()" class="section__test__body__form__header__buttons-create"> + Yana qo‘shish</button>
+                            <button onclick="p()" class="section__test__body__form__header__buttons-delete"><i
                                     class="bi bi-trash3-fill"></i></button>
 
                         </div>
                     </div>
+                    <label for="">Turi</label> <br>
+                    <select id="turi">
+                        <option value="OnaTili">Ona tili</option>
+                        <option value="metematika">Matematika</option>
+                        <option value="tarx">Tarix</option>
+                    </section>
+                    
                     <label for="">Savol nomi</label> <br>
                     <input class="section__test__body__form-input" type="text" placeholder="Savol nomini kiriting"
-                        name="" id=""><br>
+                        name="" id="sectionInput1"><br>
                     <label for="">Variantlar</label> <br>
-                    <input type="radio" placeholder="Savol nomini kiriting" name="" id="">
+                    <input type="radio" value="A" name="genderS" id="a">
                     <input class="section__test__body__form-input" type="text" placeholder="Savol nomini kiriting"
-                        name="" id=""><br>
-                    <input type="radio" placeholder="Savol nomini kiriting" name="" id="">
+                        name="" id="inputA"><br>
+                    <input type="radio" value="B"  name="genderS" id="b">
                     <input class="section__test__body__form-input" type="text" placeholder="Savol nomini kiriting"
-                        name="" id=""><br>
-                    <input type="radio" placeholder="Savol nomini kiriting" name="" id="">
+                        name="" id="inputB"><br>
+                    <input type="radio" value="D"  name="genderS" id="d">
                     <input class="section__test__body__form-input" type="text" placeholder="Savol nomini kiriting"
-                        name="" id="">
+                        name="" id="inputD">
                 </div>
                 <div class="section__test__body__form2 d-none" id="section__test__body__form2">
                     <div class="section__test__body__form__header">
@@ -106,8 +107,27 @@
 
             </div>
         </section>
-        <section id="section__users" class="section__users d-none">
+        <section class="section__users d-none " id="section__users">
             users
+        </section>
+        <section class="section__account d-none" id="section__account">
+            <nav class="navbar">
+                <div class="navbar__text">
+                    <h1> Account Settings</h1>
+                </div>
+            </nav>
+            <div class="section__account__body ">
+                <div class="section__account__body__img">
+                    <img src="../../img/card.png" alt="">
+                    <div class="section__account__body__img__text">
+                        <h3>Heather Wright</h3>
+                        <p> PNG or JPG no bigger than 1000px wide and tall.</p>
+                    </div>
+                    <div class="section__acount__body__img-button">
+                        <button>section</button>
+                    </div>
+                </div>
+            </div>
         </section>
     </div>
 

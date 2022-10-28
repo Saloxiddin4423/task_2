@@ -11,7 +11,7 @@
 }
 
 .d-none {
-  display: none;
+  display: none !important;
 }
 
 .d-block {
@@ -256,11 +256,6 @@ a {
   margin-top: 25px;
 }
 
-.containers .section .section__applicants {
-  overflow: scroll;
-  height: 80vh;
-}
-
 .containers .section .section__applicants-table {
   width: 100%;
   padding: 25px;
@@ -319,7 +314,7 @@ a {
 .containers .section__test {
   background: #E5E5E5;
   overflow: hidden;
-  height: 100vh;
+  height: 100%;
 }
 
 .containers .section__test .navbar {
@@ -554,6 +549,65 @@ a {
 .containers .section__test__body__form2-input:focus {
   border: 1px solid #5c63f2;
   outline: none;
+}
+
+.containers .section__account {
+  background: #E5E5E5;
+}
+
+.containers .section__account .navbar {
+  padding: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 0.1px solid #E5E5E5;
+  background: white;
+}
+
+.containers .section__account .navbar__text h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+}
+
+.containers .section__account__body {
+  width: 65%;
+  margin: 0 auto;
+  padding: 25px;
+}
+
+.containers .section__account__body__img {
+  padding: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background: #FFFFFF;
+  border-radius: 16px;
+}
+
+.containers .section__account__body__img img {
+  width: 50px;
+}
+
+.containers .section__account__body__img__text h3 {
+  font-size: 16px;
+}
+
+.containers .section__account__body__img__text p {
+  color: #425466;
+  font-size: 14px;
+}
+
+.containers .section__account__body__img-button button {
+  background-color: white;
+  border: none;
 }
 
 @media only screen and (max-width: 1000px) {

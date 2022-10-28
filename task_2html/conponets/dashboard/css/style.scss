@@ -11,15 +11,17 @@
 }
 
 .d-none {
-    display: none;
+    display: none !important;
 }
 
 .d-block {
     display: block;
 }
-.opasity{
+
+.opasity {
     opacity: 0.3 !important;
 }
+
 a {
     text-decoration: none;
     color: black;
@@ -31,23 +33,26 @@ a {
     border-radius: 12px;
     background: #c4c4c5;
     position: absolute;
-    top:25vh;
-    left:30%;
+    top: 25vh;
+    left: 30%;
     padding: 25px;
     transition: 2s;
+
     &__header {
         &-item {
             display: flex;
             gap: 20px;
             cursor: pointer;
-            &-icon{
-                background:#E4ECF7;
+
+            &-icon {
+                background: #E4ECF7;
                 border-radius: 8px;
                 padding: 10px;
-                color:  #4C6FFF ;
+                color: #4C6FFF;
                 font-size: 20px;
             }
-            &-text{
+
+            &-text {
                 font-size: 16px;
                 font-family: Arial, Helvetica, sans-serif;
                 margin-top: 8px;
@@ -181,8 +186,7 @@ a {
             padding: 15px;
             gap: 20px;
             overflow: scroll;
-            height: 80vh;
-
+            height: 80vh;   
             .cards {
                 padding: 15px;
                 background: white;
@@ -190,12 +194,10 @@ a {
                 display: flex;
                 justify-content: space-between;
                 border-radius: 12px;
-
                 .card {
                     img {
                         width: 70px;
                     }
-
                     &-title {
                         font-family: Arial, Helvetica, sans-serif;
                         font-weight: 600;
@@ -211,7 +213,6 @@ a {
                         font-size: 14px;
                         color: #425466;
                     }
-
                     &-btn {
                         background: #E4ECF7;
                         border-radius: 6px;
@@ -225,8 +226,7 @@ a {
         }
 
         .section__applicants {
-            overflow: scroll;
-            height: 80vh;
+         
 
             &-table {
                 width: 100%;
@@ -294,7 +294,7 @@ a {
     .section__test {
         background: #E5E5E5;
         overflow: hidden;
-        height: 100vh;
+        height: 100%;
 
         .navbar {
             padding: 25px;
@@ -385,33 +385,39 @@ a {
                     cursor: pointer;
                 }
             }
-            &__form{
+
+            &__form {
                 margin-top: 25px;
                 background: white;
                 padding: 20px;
                 border-radius: 15px;
-                &__header{
+
+                &__header {
                     display: flex;
                     justify-content: space-between;
-                  &__buttons{
-                    &-create:hover{
-                        background: #5c63f2;
-                        color: white;
-                    }
-                    &-delete:hover{
-                        background: #5c63f2;
-                        color: white;
-                    }
-                        &-create{
-                            background-color:white;
+
+                    &__buttons {
+                        &-create:hover {
+                            background: #5c63f2;
+                            color: white;
+                        }
+
+                        &-delete:hover {
+                            background: #5c63f2;
+                            color: white;
+                        }
+
+                        &-create {
+                            background-color: white;
                             border: 0.5px solid rgb(158, 158, 158);
                             border-radius: 6px;
                             padding: 10px 20px;
                             transition: 1s;
                             cursor: pointer;
                         }
-                        &-delete{
-                            background-color:#E4ECF7;
+
+                        &-delete {
+                            background-color: #E4ECF7;
                             cursor: pointer;
                             border: 0.5px solid rgb(158, 158, 158);
                             padding: 10px 20px;
@@ -419,54 +425,64 @@ a {
                             transition: 1s;
 
                         }
-                  }
+                    }
                 }
-                label{
+
+                label {
                     color: #425466;
                     font-size: 14px;
                 }
-                input{
+
+                input {
                     margin-top: 15px;
                 }
-                &-input{
+
+                &-input {
                     width: 90%;
                     background: rgba(237, 242, 247, 0.25);
                     border: 1px solid #EDF2F7;
                     border-radius: 6px;
                     padding: 15px;
                 }
-                &-input:focus{
+
+                &-input:focus {
                     border: 1px solid #5c63f2;
                     outline: none;
                 }
             }
-            &__form2{
+
+            &__form2 {
                 margin-top: 25px;
                 background: white;
                 padding: 20px;
                 border-radius: 15px;
-                &__header{
+
+                &__header {
                     display: flex;
                     justify-content: space-between;
-                  &__buttons{
-                    &-create:hover{
-                        background: #5c63f2;
-                        color: white;
-                    }
-                    &-delete:hover{
-                        background: #5c63f2;
-                        color: white;
-                    }
-                        &-create{
-                            background-color:white;
+
+                    &__buttons {
+                        &-create:hover {
+                            background: #5c63f2;
+                            color: white;
+                        }
+
+                        &-delete:hover {
+                            background: #5c63f2;
+                            color: white;
+                        }
+
+                        &-create {
+                            background-color: white;
                             border: 0.5px solid rgb(158, 158, 158);
                             border-radius: 6px;
                             padding: 10px 20px;
                             transition: 1s;
                             cursor: pointer;
                         }
-                        &-delete{
-                            background-color:#E4ECF7;
+
+                        &-delete {
+                            background-color: #E4ECF7;
                             cursor: pointer;
                             border: 0.5px solid rgb(158, 158, 158);
                             padding: 10px 20px;
@@ -474,25 +490,81 @@ a {
                             transition: 1s;
 
                         }
-                  }
+                    }
                 }
-                label{
+
+                label {
                     color: #425466;
                     font-size: 14px;
                 }
-                input{
+
+                input {
                     margin-top: 15px;
                 }
-                &-input{
+
+                &-input {
                     width: 90%;
                     background: rgba(237, 242, 247, 0.25);
                     border: 1px solid #EDF2F7;
                     border-radius: 6px;
                     padding: 15px;
                 }
-                &-input:focus{
+
+                &-input:focus {
                     border: 1px solid #5c63f2;
                     outline: none;
+                }
+            }
+        }
+    }
+
+    .section__account {
+        background: #E5E5E5;
+        .navbar {
+            padding: 25px;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 0.1px solid #E5E5E5;
+            background: white;
+
+            &__text {
+                h1 {
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 28px;
+                }
+            }
+        }
+
+        &__body {
+            width: 65%;
+            margin: 0 auto;
+            padding: 25px;
+
+            &__img {
+                padding: 25px  ;
+                display: flex;
+                justify-content: space-evenly;
+                background: #FFFFFF;
+                border-radius: 16px;
+                img {
+                    width: 50px;
+                }
+                &__text{
+                    h3{
+                        font-size: 16px;
+                    }
+                    p{
+                        color: #425466;
+                        font-size: 14px; 
+                    }
+                }
+                &-button{
+                    button{
+                        background-color: white;
+                        border: none;
+                    }
                 }
             }
         }
