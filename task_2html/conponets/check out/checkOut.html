@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="checkOut.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="nav">
+            <div class="nav__title">
+                <h1>Text on psychology</h1>
+            </div>
+            <div class="nav__button">
+                <button id="time" class="nav__button-time">
+                    144545
+                </button>
+                <button class="nav__button-finish">Finish</button>
+
+            </div>
+        </nav>
+        <section class="section">
+            <div class="section__body">
+                <div class="section__body__test">
+                    <p>You can choose one answer</p>
+                    <h3 id="question">Najot Ta’lim’ga qachon va qayerda, kim tomonidan asos solingan?</h3>
+                    <div>
+                  A    <input onclick="check()" onclick="check()" type="radio" value="A" name="radio" id="radioA"> <span id="a">a</span> <br>
+               B        <input onclick="check()" type="radio" value="B" name="radio" id="radioB"> <span id="b">a</span> <br>
+                  D    <input onclick="check()" type="radio" value="D" name="radio" id="radioD"> <span id="d">a</span> <br>
+                    </div>
+                </div>
+                <div class="section__body__button">
+                    <div>
+                        <b id="number">1</b>
+                    </div>
+                    <div>
+                        <button onclick="first()">First</button>
+                        <button onclick="next()">the next</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="checkOut.js">
+
+    </script>
+</body>
+
+</html>

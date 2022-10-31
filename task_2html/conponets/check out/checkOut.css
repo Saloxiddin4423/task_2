@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  background: #E5E5E5;
+  padding: 30px 25px;
+  height: 100vh;
+}
+
+.container .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .nav__button {
+  margin-top: 15px;
+}
+
+.container .nav__button-time {
+  border: none;
+  outline: none;
+  background: #E5E5E5;
+  font-size: 20px;
+  color: #BB65FF;
+}
+
+.container .nav__button-finish {
+  border-radius: 4px;
+  border: 1px solid blue;
+  outline: none;
+  padding: 10px 20px;
+  background: #4C6FFF;
+  color: white;
+  cursor: pointer;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.container .nav__button-finish:hover {
+  background: white;
+  color: black;
+}
+
+.container .section {
+  width: 65%;
+  margin: 60px auto;
+}
+
+.container .section__body {
+  padding: 25px;
+  -webkit-box-shadow: 0px 0px 1px rgba(12, 26, 75, 0.24), 0px 3px 8px -1px rgba(50, 50, 71, 0.05);
+          box-shadow: 0px 0px 1px rgba(12, 26, 75, 0.24), 0px 3px 8px -1px rgba(50, 50, 71, 0.05);
+  border-radius: 16px;
+  background: #fff;
+}
+
+.container .section__body__test h3 {
+  font-size: 30px;
+}
+
+.container .section__body__test p {
+  font-size: 14px;
+}
+
+.container .section__body__test span {
+  font-size: 20px;
+  padding: 10px;
+}
+
+.container .section__body__test div {
+  margin-top: 25px;
+}
+
+.container .section__body__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 10px;
+}
+
+.container .section__body__button button {
+  background: #4C6FFF;
+  border-radius: 8px;
+  padding: 10px 24px;
+  color: #fff;
+  border: 0.5px solid #4C6FFF;
+  outline: none;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.container .section__body__button button:hover {
+  background: #fff;
+  color: black;
+  border: 0.5px solid #9a9a9a;
+}
+/*# sourceMappingURL=checkOut.css.map */
