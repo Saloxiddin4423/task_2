@@ -172,12 +172,14 @@ const exchange = (arg) => {
 		Applicants.style.color = "#718096"
 		section__body.className = "section__body d-block"
 		section__applicants.className = 'd-none'
-	} else if (arg == "Applicants") {
+	} 
+	else if (arg == "Applicants") {
 		text.style.color = "#718096"
 		section__body.className = "section__body d-none"
 		Applicants.style.color = "#4C6FFF"
 		section__applicants.className = 'd-block section__applicants'
-	} else if (arg == "Dashboard") {
+	} else 
+	if (arg == "Dashboard") {
 		section.className = "d-block section "
 		section__test.className = "d-none"
 		section__users.className = "d-none"
@@ -226,7 +228,8 @@ const exchange = (arg) => {
 		section__test__body__form.className = "d-none"
 		section__account.className = "d-none"
 
-	} else if (arg == "Account") {
+	} 
+	else if (arg == "Account") {
 		section__account.className = "d-block section__account"
 		section__users.className = "d-none"
 		section__test.className = "d-none"
