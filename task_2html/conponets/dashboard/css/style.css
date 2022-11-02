@@ -255,6 +255,7 @@ a {
   border: none;
   padding: 5px;
   margin-top: 25px;
+  cursor: pointer;
 }
 
 .containers .section__body .cards .card-button .bi-trash {
@@ -733,6 +734,16 @@ a {
   .containers .aside .logo span {
     display: none;
   }
+  .containers .section__body {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .containers .section__test__body__form__header {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
   .containers .section__account .navbar {
     padding: 15px;
   }
@@ -747,6 +758,28 @@ a {
     display: grid;
     -ms-grid-columns: 0.9fr 6fr;
         grid-template-columns: 0.9fr 6fr;
+  }
+  .containers .section__body {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .containers .section__test .navbar__button {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .containers .section__test .navbar__button-Save {
+    margin-top: 6px;
+  }
+  .containers .section__test__body__form__header {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .containers .section__test__body__form__header__buttons {
+    margin-top: 20px;
   }
   .containers .section__account .navbar {
     padding: 15px;

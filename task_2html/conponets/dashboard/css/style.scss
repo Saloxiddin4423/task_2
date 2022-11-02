@@ -130,7 +130,6 @@ a {
     .section {
         background: #E5E5E5;
         overflow: hidden;
-
         .navbar {
             padding: 25px;
             display: flex;
@@ -222,6 +221,7 @@ a {
                         border: none;
                         padding: 5px;
                         margin-top: 25px;
+                        cursor: pointer;
                     }
                 }
 
@@ -673,7 +673,6 @@ a {
     .containers {
         display: grid;
         grid-template-columns: 0.5fr 6fr;
-
         .aside {
             width: 80px;
 
@@ -711,7 +710,21 @@ a {
                 }
             }
         }
-
+        .section{
+            &__body{
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        .section__test{
+            &__body{
+                &__form{
+                    &__header{
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                    }
+                }
+            }
+        }
         .section__account {
 
             .navbar {
@@ -731,7 +744,33 @@ a {
     .containers {
         display: grid;
         grid-template-columns: 0.9fr 6fr;
-
+        .section{
+            &__body{
+                grid-template-columns: 1fr  ;
+            }
+        }
+        .section__test{
+            .navbar{
+                &__button{
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    &-Save{
+                        margin-top: 6px;
+                    }
+                }
+            }
+            &__body{
+                &__form{
+                    &__header{
+                        display: grid;
+                        grid-template-columns: 1fr ;
+                        &__buttons{
+                            margin-top: 20px;
+                        }
+                    }
+                }
+            }
+        }
         .section__account {
 
             .navbar {

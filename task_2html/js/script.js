@@ -6,7 +6,7 @@ let passwordSign = document.getElementById('passwordSign')
 let form = document.getElementById('form')
 let form_sign = document.getElementById('form-sign')
 
-let data = []
+let data = []   
 let res = JSON.parse(localStorage.getItem("data"))
 const register = () => {
     if (name.value !== "" && email.value !== "" && password.value !== "") {
