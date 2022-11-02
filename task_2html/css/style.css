@@ -58,13 +58,6 @@
 
 .form .forma-input:focus {
   border: 1.5px solid #4C6FFF;
-  padding: 17px;
-  font-size: 17px;
-}
-
-.form .forma-input:placeholder-shown {
-  padding: 15px;
-  font-size: 15px;
 }
 
 .form .forma-button {
@@ -126,13 +119,6 @@
 
 .form-sign .forma-input:focus {
   border: 2px solid #4C6FFF;
-  padding: 17px;
-  font-size: 17px;
-}
-
-.form-sign .forma-input:placeholder-shown {
-  padding: 15px;
-  font-size: 15px;
 }
 
 .form-sign .forma-button {
