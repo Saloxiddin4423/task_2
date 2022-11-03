@@ -327,7 +327,7 @@ function reading() {
 			<div class="card" onclick="access('${index}','onatili')">
 			   <img src="../../img/onatili.png" alt="">
 			   <h3 class="card-title">Ona-tili</h3>
-			   <a href="../../index.html"  >
+			   <a href="answers.html">
 			   <p class="card-label">check the answers</p></a>
 			  <a href="../check out/checkOut.html"><button class="card-btn">check out</button></a>
 			</div>
@@ -345,13 +345,15 @@ function reading() {
 			section__body.innerHTML += `
 			
 			  <div class="cards" >
-			  <a href="../../index.html" onclick="access(${index},'tarx')">
-			    <div class="card">
+			 
+			    <div class="card" onclick="access(${index},'tarx')">
 				  <img src="../../img/unnamed.webp" alt="">
 				  <h3 class="card-title">Tarix</h3>
-				  <p class="card-label">Label, Label</p>
-				  <button class="card-btn">Badge</button>
-			    </div></a> 
+				  <a href="answers.html" >
+				    <p class="card-label">check the answers </p></a> 
+					<a href="../check out/checkOut.html">
+					<button class="card-btn">check out</button></a>
+			    </div>
 			    <div class="card-button">
 			    <h2 ><i onclick="crudDelet(${index},'tarx')" class="bi bi-trash"></i></h2>
 			    <h2><i class="bi bi-pencil-square"></i></h2>
@@ -364,13 +366,15 @@ function reading() {
 		JSON.parse(localStorage.getItem("metematika")).forEach((elem, index) => {
 			section__body.innerHTML += `
 			  <div class="cards"  >
-			  <a href="../../index.html" onclick="access(${index},'matem')">
-			    <div class="card">
+			  
+			    <div class="card" onclick="access(${index},'matem')">
 				  <img src="../../img/matem.png" alt="">
 				  <h3 class="card-title">Matematika </h3>
-				  <p class="card-label">Label, Label</p>
-				  <button class="card-btn">Badge</button>
-			    </div></a>
+				  <a href="answers.html" >  
+				  <p class="card-label">check the answers </p></a>
+				  <a href="../check out/checkOut.html">
+				  <button class="card-btn">check out</button></a>
+			    </div>
 			    <div class="card-button">
 			    <h2 ><i onclick="crudDelet(${index},'metematika')" class="bi bi-trash"></i></h2>
 			    <h2><i class="bi bi-pencil-square"></i></h2>

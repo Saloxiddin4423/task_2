@@ -1,5 +1,7 @@
 let id = localStorage.getItem("id")
 let resOnaTili = JSON.parse(localStorage.getItem('OnaTili'))
+let metematika = JSON.parse(localStorage.getItem('metematika'))
+let tarx = JSON.parse(localStorage.getItem('tarx'))
 let question = document.getElementById("question")
 let a = document.getElementById("a")
 let b = document.getElementById("b")
@@ -14,12 +16,25 @@ let time = document.getElementById("time")
 let min = 14
 let sec = 60
 let number = document.getElementById("number")
-
+let science = localStorage.getItem("science")
 const test = () => {
-    question.innerHTML = resOnaTili[id][counter].name
-    a.innerHTML = resOnaTili[id][counter].inputA
-    b.innerHTML = resOnaTili[id][counter].inputB
-    d.innerHTML = resOnaTili[id][counter].inputD
+    if(science == "OnaTili"){
+        question.innerHTML = resOnaTili[id][counter].name
+        a.innerHTML = resOnaTili[id][counter].inputA
+        b.innerHTML = resOnaTili[id][counter].inputB
+        d.innerHTML = resOnaTili[id][counter].inputD
+    }else if (science == "tarx") {
+        question.innerHTML = tarx[id][counter].name
+        a.innerHTML = tarx[id][counter].inputA
+        b.innerHTML = tarx[id][counter].inputB
+        d.innerHTML = tarx[id][counter].inputD
+    }else if (science == "metematika") {
+        question.innerHTML = metematika[id][counter].name
+        a.innerHTML = metematika[id][counter].inputA
+        b.innerHTML = metematika[id][counter].inputB
+        d.innerHTML = metematika[id][counter].inputD
+    }
+   
 }
 test()
 const check = () => {
@@ -36,20 +51,49 @@ const check = () => {
 const next = () => {
 
     counter++
-    if (resOnaTili[id].length == counter) {
-        alert(resOnaTili[id].length + " ta savoldan " + total + " tasini topdingiz")
-        min = 0
-        sec = 0
-    } else {
-        test()
-        resOnaTili[id][counter - 1].answer == answer ? total++ : "";
-        console.log(total);
-        radioA.checked = false
-        radioB.checked = false
-        radioD.checked = false
-        console.log(min + ":" + sec);
 
+    if(science == "OnaTili"){
+        if (resOnaTili[id].length == counter) {
+            alert(resOnaTili[id].length + " ta savoldan " + total + " tasini topdingiz")
+            min = 0
+            sec = 0
+        } else {
+            test()
+            resOnaTili[id][counter - 1].answer == answer ? total++ : "";
+            radioA.checked = false
+            radioB.checked = false
+            radioD.checked = false
+    
+        }
+    }else if (science == "tarx") {
+        if (tarx[id].length == counter) {
+            alert(tarx[id].length + " ta savoldan " + total + " tasini topdingiz")
+            min = 0
+            sec = 0
+        } else {
+            test()
+            tarx[id][counter - 1].answer == answer ? total++ : "";
+            radioA.checked = false
+            radioB.checked = false
+            radioD.checked = false
+    
+        }
+    }else if (science = "metematika") {
+        if (metematika[id].length == counter) {
+            alert(metematika[id].length + " ta savoldan " + total + " tasini topdingiz")
+            min = 0
+            sec = 0
+        } else {
+            test()
+            metematika[id][counter - 1].answer == answer ? total++ : "";
+            radioA.checked = false
+            radioB.checked = false
+            radioD.checked = false
+    
+        }
     }
+
+ 
     number.innerHTML = counter+1
 }
 const first = () => {

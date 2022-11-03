@@ -19,7 +19,7 @@
 }
 
 .opasity {
-    opacity: 0.3 !important;
+    opacity: 0.3 ;
 }
 
 a {
@@ -670,6 +670,18 @@ a {
 }
 
 @media only screen and (max-width: 1000px) {
+    .modal {
+        width: 550px;
+        height: 300px;
+        border-radius: 12px;
+        background: #c4c4c5;
+        position: absolute;
+        top: 20vh;
+        left: 22%;
+        padding: 25px;
+        transition: 2s;
+    }
+    
     .containers {
         display: grid;
         grid-template-columns: 0.5fr 6fr;
@@ -741,6 +753,17 @@ a {
 }
 
 @media only screen and (max-width: 600px) {
+    .modal {
+        width: 450px;
+        height: 250px;
+        border-radius: 12px;
+        background: #c4c4c5;
+        position: absolute;
+        top: 20vh;
+        left: 15%;
+        padding: 25px;
+        transition: 2s;
+    }
     .containers {
         display: grid;
         grid-template-columns: 0.9fr 6fr;
